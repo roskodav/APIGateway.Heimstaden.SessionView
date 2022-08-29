@@ -1,0 +1,3 @@
+[submodule "APIGateway.Core"]
+	path = APIGateway.Core
+	url = https://github.com/roskodav/APIGateway.Core.git

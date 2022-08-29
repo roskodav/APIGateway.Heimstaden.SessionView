@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  {{ NAME }}:
+    image: {{ IMAGE }}
+    restart: always
+    environment:
+      'MluviiApp:Name': '{{ MLUVII_CLIENT_ID }}'
+      'MluviiApp:Secret': '{{ MLUVII_CLIENT_SECRET }}'
+      'Sentry:Dsn': 'https://6b58b104abe9474b9d0c407e8cd0dcba@o214979.ingest.sentry.io/6680904'
+      'Sentry:Environment': 'production'
+      
