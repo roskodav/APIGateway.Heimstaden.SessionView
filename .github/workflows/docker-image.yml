@@ -6,9 +6,9 @@ on:
   pull_request:
     branches: [ "master" ]
 env:
-  IMAGE: mluvii/api-gateway-heimstaden-anonymize
+  IMAGE: mluvii/api-gateway-heimstaden-sessionview
   VERSION: 1.0.0.${{ github.run_number }}
-  NAME: api-gateway-heimstaden-anonymize-production
+  NAME: api-gateway-heimstaden-sessionview-production
 
 jobs:
   push_to_registry:
