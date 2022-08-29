@@ -1,17 +1,11 @@
 using APIGateway.Core;
-using APIGateway.Heimstaden.SessionView.Jobs;
+using APIGateway.Core.Encryption;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace APIGateway.Heimstaden.SessionView
 {
@@ -27,12 +21,14 @@ namespace APIGateway.Heimstaden.SessionView
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             services.AddCors();
             services.AddControllers();
             services.AddMluviiClient(Configuration);
             services.AddQuartzJobs();
-
+            services.AddApiGatewayCore(Configuration);
+            services.AddSingleton<IEncryption, Encryption>();
+            services.Configure<ServiceOptions>(Configuration.GetSection("Service"));
+            services.Configure<EncryptionKey>(Configuration.GetSection("Encryption"));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "", Version = "v1" });
