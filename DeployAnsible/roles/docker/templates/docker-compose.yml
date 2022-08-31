@@ -4,6 +4,8 @@ services:
   {{ NAME }}:
     image: {{ IMAGE }}
     restart: always
+    ports:
+      - 5300:5300
     environment:
       'MluviiApp:Name': '{{ MLUVII_CLIENT_ID }}'
       'MluviiApp:Secret': '{{ MLUVII_CLIENT_SECRET }}'
