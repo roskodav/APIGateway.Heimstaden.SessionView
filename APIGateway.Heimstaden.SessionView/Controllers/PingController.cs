@@ -14,7 +14,7 @@ namespace APIGateway.Heimstaden.SessionView.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok("Yes I am here.");
+            return Ok("Yes I am here. Session View");
         }
     }
 }
