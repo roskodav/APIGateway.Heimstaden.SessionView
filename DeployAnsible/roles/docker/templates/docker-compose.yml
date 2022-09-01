@@ -11,4 +11,5 @@ services:
       'MluviiApp:Secret': '{{ MLUVII_CLIENT_SECRET }}'
       'Sentry:Dsn': 'https://c5bb2f6d80aa41c6b51784b51e0afe66@o214979.ingest.sentry.io/6705599'
       'Sentry:Environment': 'production'
+      'Service:ExternalUrl': 'https://heimstaden.apigtw.mluvii.com/'
       
