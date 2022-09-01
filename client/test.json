@@ -1,0 +1,103 @@
+{
+  "sessionId": {
+    "id": 4007585,
+    "companyId": 1,
+    "departmentId": 62,
+    "guest": {
+      "tempId": 4939982,
+      "ipAddress": null,
+      "trackedId": null,
+      "identity": "8691057",
+      "channelIdentity": 9217055,
+      "os": 1,
+      "browser": 1,
+      "language": "cs",
+      "callParams": {
+        "need": "TechSupport",
+        "oo1_dnid": "+420233336410",
+        "oo1_guest_phone": "+420724868480",
+        "oo1_widget_lang": "cs"
+      },
+      "gdprVersion": null
+    },
+    "channel": 3,
+    "source": 5,
+    "status": 7,
+    "avSupport": 3,
+    "directCallNumber": null,
+    "phoneCallbackNumber": "+420724868480",
+    "isDirectChat": false,
+    "url": null,
+    "widget": null,
+    "operators": [
+      {
+        "joined": "2021-09-16T14:26:05.741814+02:00",
+        "left": "2021-09-16T14:28:52.618095+02:00",
+        "concluded": "2021-09-16T14:28:59.355349+02:00",
+        "feedbackResult": null,
+        "feedbackText": null,
+        "note": null,
+        "userId": 2958,
+        "userName": "sabina.hlinenska@icord.cz",
+        "firstName": "Sabina",
+        "lastName": "HlinÄ›nskÃ¡"
+      }
+    ],
+    "reviewers": [],
+    "enteredQueue": "2021-09-16T14:26:01.262879+02:00",
+    "created": "2021-09-16T14:26:01.262879+02:00",
+    "guestJoined": "2021-09-16T14:26:01.262879+02:00",
+    "started": "2021-09-16T14:26:05.741814+02:00",
+    "ended": "2021-09-16T14:28:52.618095+02:00",
+    "waited": "PT4.478935S",
+    "length": "PT2M46.876281S",
+    "blacklisted": false,
+    "phoneCallbackDialed": null,
+    "activities": [
+      {
+        "activityId": 30469467,
+        "time": "2021-09-16T14:28:52.618095+02:00",
+        "type": 28,
+        "client": 1,
+        "userId": 2958,
+        "chatbotId": null,
+        "file": null,
+        "text": null,
+        "chatbotMessageContent": null,
+        "response": null,
+        "result": null,
+        "streamAvailable": null,
+        "toOperatorUserId": null,
+        "toOperatorFullName": null,
+        "toGroupId": null,
+        "toGroupName": null,
+        "note": null,
+        "heroCardId": null,
+        "heroCard": null,
+        "callScriptId": null,
+        "callScript": null,
+        "submissionOfActivityId": null,
+        "submissionByOperatorId": null,
+        "submissionResult": null,
+        "submissionParams": null
+      }
+    ],
+    "tags": [],
+    "chatbots": [],
+    "guestFeedbackStars": null,
+    "guestFeedbackScale": null,
+    "guestFeedbackText": null,
+    "autoAccepted": false,
+    "guestFeedbackCustomFields": null,
+    "recordings": [
+      {
+        "id": 792249,
+        "name": "mluvii-1631795153.396600.mp3",
+        "serviceId": 13,
+        "downloadUrl": "https://cfc1-88-103-229-120.ngrok.io/recording?token=F4O0iNW6UCsqeGhtXaSFpOuUFhZZH2gEsZDdhTPVLB%2bLgO7qT3gynifDE215xI7HgCvwoc0iRpO7UMP6LqM0Fzam5XAAxPiSolTNr37QnnHeU6WZHp6AGKyt%2bMoYEe69T3jdJ2SXuJa9ZyrNAnYWOXPoejJCm0Ijkyw%2bmtY5CPbReDuscdponUSg0wd6ZxvX"
+      }
+    ],
+    "guestLeftSession": 3,
+    "outboundDialResult": null
+  }
+}
