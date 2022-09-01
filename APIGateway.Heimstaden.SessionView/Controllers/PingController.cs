@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace APIGateway.Heimstaden.SessionView.Controllers
 {
     [ApiController]
-    [Route("")]
+    [Route("ping")]
     public class PingController : ControllerBase
     {
         [HttpGet]

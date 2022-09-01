@@ -1,9 +1,12 @@
+using System.IO;
 using APIGateway.Core;
 using APIGateway.Core.Encryption;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
@@ -39,10 +42,17 @@ namespace APIGateway.Heimstaden.SessionView
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseCors(x => x
-             .AllowAnyMethod()
-             .AllowAnyHeader()
-             .SetIsOriginAllowed(origin => true)
-             .AllowCredentials()); // allow any origin
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+            app.UseStaticFiles();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot"))
+            });
 
 
             if (env.IsDevelopment())

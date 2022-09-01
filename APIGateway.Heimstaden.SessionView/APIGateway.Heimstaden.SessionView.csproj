@@ -17,5 +17,9 @@
     <ProjectReference Include="..\APIGateway.Core\APIGateway.Core\APIGateway.Core\APIGateway.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 
 </Project>
