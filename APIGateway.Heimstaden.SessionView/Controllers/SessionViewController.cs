@@ -16,7 +16,7 @@ using Newtonsoft.Json.Serialization;
 namespace APIGateway.Heimstaden.SessionView.Controllers
 {
     [ApiController]
-    [Route("SessionView")]
+    [Route("sessionId")]
     public class SessionViewController : ControllerBase
     {
 
