@@ -10,7 +10,9 @@ namespace APIGateway.Heimstaden.SessionView.Controllers
     /// <summary>
     /// This service provide access to recordinf for unregistered users in FAMA
     /// </summary>
-    public class Recording : Controller
+    [ApiController]
+    [Route("recording")]
+    public class Recording : ControllerBase
     {
         private readonly MluviiClient _client;
         private readonly IEncryption _encryption;
