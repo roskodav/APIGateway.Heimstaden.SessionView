@@ -1,6 +1,7 @@
 using System.IO;
 using APIGateway.Core;
 using APIGateway.Core.Encryption;
+using AspNetCore.Proxy;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -25,6 +26,7 @@ namespace APIGateway.Heimstaden.SessionView
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+            services.AddProxies();
             services.AddControllers();
             services.AddMluviiClient(Configuration);
             services.AddQuartzJobs();
